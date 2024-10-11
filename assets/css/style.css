@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    border: 0;
+}
+
+/* -------------Header------------- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 6px;
+}
+
+header {
+    background-color: #FFD500;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    background-color: #FFD400;
+    font-size: 14px;
+}
+
+header ul li,
+a {
+    font-size: 14px;
+}
+
+header ul li:nth-child(2) {
+    position: relative;
+}
+
+header ul li:nth-child(2) i {
+    font-size: 16px;
+    background-color: white;
+    color: grey;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* Khoảng cách icon cách trái */
+    transform: translateY(-50%);
+    border-radius: 50%;
+    /* Bo tròn icon */
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+header ul li:nth-child(2) input {
+    height: 40px;
+    width: 444px;
+    font-size: 12px;
+    border-radius: 32px;
+    border: none;
+    padding-left: 36px;
+    outline: none;
+}
+
+header ul li:nth-child(3) button,
+header ul li:nth-child(4) button {
+    color: #333333;
+    width: 110px;
+    padding: 0;
+    border: 0;
+    border-radius: 32px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    /* margin-right: 0px; */
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header ul li:nth-child(3) button i,
+header ul li:nth-child(4) button i {
+    font-size: 22px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+header ul li:nth-child(3) button:hover,
+header ul li:nth-child(4) button:hover {
+    background-color: #FFEE99;
+}
+
+header ul li:nth-child(5) {
+    background-color: rgba(255, 172, 10, .6);
+    background-color: #ffe14c;
+    border-radius: 32px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+header ul li:nth-child(5) i {
+    color: #333333;
+    font-size: 22px;
+    margin-right: 2px;
+}
+
+header ul li:nth-child(5) a {
+    color: #336542;
+    display: flex;
+    align-items: center;
+}
+
+header ul li:nth-child(5) a i {
+    font-size: 10px;
+    margin-left: 100px;
+}
+
+header ul li:nth-child(5):hover {
+    background-color: #FFEE99;
+}
+
+/* -------------Navigation------------- */
+.menu-bar {
+    background-color: #FFD500;
+    height: 45px;
+    margin-top: -10px;
+}
+
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-bar-content>ul>li {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 14px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.menu-bar ul li a img {
+    margin-bottom: -5px;
+    margin-right: 5px;
+    width: 20px;
+}
+
+.menu-bar ul li a i {
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.menu-bar ul li:hover {
+    background-color: #FFEE99;
+    border-radius: 8px;
+}
+
+/* -------------address------------- */
+.address-form {
+    font-size: 14px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: -999;
+}
+
+.address-form-content {
+    width: 600px;
+    height: 430px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.address-form-content .search {
+    padding: 10px 15px 0 15px;
+    position: relative;
+}
+
+.address-form-content .search b {
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.address-form-content .search p {
+    padding: 7px 0;
+}
+
+.search-location {
+    position: relative;
+}
+
+.search-location i {
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    color: black;
+    font-size: 18px;
+}
+
+.address-form-content .search i {
+    margin: 10px;
+}
+
+.address-form-content .search input {
+    width: 100%;
+    padding: 8px 28px 8px 28px;
+    border: 1px solid #DEE1E7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: 0;
+}
+
+.choose-province span {
+    color: #667085;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #fff;
+    margin: 8px 268px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    font-weight: normal;
+}
+
+.address-form-content .location-tabs {
+    margin: 45px 45px;
+}
+
+.address-form-content .location-tabs a {
+    border-color: #2377F0;
+    background-color: #f1f8fe;
+    color: #2377e8;
+    font-weight: bold;
+}
+
+.address-form-content .location-tabs a {
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 10px 0;
+    margin: 30px;
+    color: #344054;
+    border-bottom: 3px solid transparent;
+}
+
+
+.address-form-content .search b span {
+    font-size: 13px;
+    color: grey;
+    position: absolute;
+    bottom: 70%;
+    right: 12px;
+}
+
+.address-form-content .search p span:nth-child(1) {
+    text-transform: capitalize;
+    color: grey;
+    padding: 0;
+}
+
+.address-form-content .search p span:nth-child(2) {
+    color: #344054;
+    padding: 0 0 10px;
+}
+
+/* -------------menu-bar------------- */
+.menu-bar-content {
+    position: relative;
+}
+
+.menu-bar-content .navmwg {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    top: 39px;
+    max-width: 1064px;
+    width: max-content;
+    left: -164px;
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+
+.menu-bar-content .navmwg strong {
+    font-size: 13px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: none;
+    display: block;
+}
+
+.menu-bar-content .navmwg div a {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    text-align: center;
+    position: relative;
+    border-radius: 12px;
+    padding: 10px 5px;
+}
+
+.menu-bar-content .navmwg div a img {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto 5px auto;
+    width: auto;
+}
+
+.menu-bar-content ul li:hover .navmwg {
+    display: block;
+}
