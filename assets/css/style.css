@@ -369,3 +369,51 @@ header ul li:nth-child(5):hover {
 .menu-bar-content ul li:hover .navmwg {
     display: grid;
 }
+
+/* Banner */
+/* .big-banner {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 1200px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.big-banner .ti-close {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #98a2b3;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.big-banner a {
+    width: 1200px;
+    min-width: 1200px;
+    height: fit-content;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.big-banner a img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 8px;
+    object-fit: cover;
+    gap: 16px display: block;
+    margin: 0 auto;
+} */
