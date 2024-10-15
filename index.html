@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
-
 </head>
 
 <body>
@@ -25,40 +24,24 @@
                 <div class="address-form">
                     <div class="address-form-content">
                         <div class="search">
-                            <b>Chọn địa chỉ nhận hàng <a href="#"><span id="address-close"
-                                        class="ti-close"></span></a></b>
-                            <p>
-                                <span class="choose-text">Địa chỉ đang chọn:</span>
-                                <span class="location">Hồ Chí Minh</span>
-                            </p>
-                            <div class="search-location">
-                                <i class="ti-search"></i>
-                                <input type="text" placeholder="Tìm nhanh tỉnh thành, quận huyện, phường xã">
-                            </div>
-                            <strong class="choose-province">
-                                <span>Hoặc chọn</span>
-                            </strong>
-                        </div>
-                        <div class="location-tabs">
-                            <a href="">Tỉnh TP</a>
-                            <a href="">Quận/Huyện</a>
-                            <a href="">Phường/Xã</a>
-                        </div>
-                        <div class="location-lists">
-                            <div class="location-column">
-                                <div class="location-item">Hồ Chí Minh</div>
-                                <div class="location-item">Đà Nẵng</div>
-                                <div class="location-item">Bà Rịa - Vũng Tàu</div>
-                                <div class="location-item">Bắc Kạn</div>
-                                <div class="location-item">Bắc Ninh</div>
-                            </div>
-                            <div class="location-column">
-                                <div class="location-item">Hà Nội</div>
-                                <div class="location-item">An Giang</div>
-                                <div class="location-item">Bắc Giang</div>
-                                <div class="location-item">Bạc Liêu</div>
-                                <div class="location-item">Bến Tre</div>
-                            </div>
+                            <b>Chọn địa chỉ nhận hàng <a href="#"><span id="address-close"><i
+                                            class="ti-close"></i></span></a></b>
+                            <form action="">
+                                <select name="" id="">
+                                    <option value="#">--Chọn địa điểm</option>
+                                    <option value="#">Hồ Chí Minh</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="#">--Chọn Quận\Huyện</option>
+                                    <option value="#">Quận 9</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="#">--Chọn Phường\Xã</option>
+                                    <option value="#">Phường Long Thạnh Mỹ</option>
+                                </select>
+                                <input type="text" placeholder="Số nhà, tên đường">
+                                <button>Xác nhận</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -220,6 +203,47 @@
             </div>
         </div>
     </section>
+    <div class="body-home">
+        <div class="big-banner">
+            <div><i class="ti-close"></i></div>
+            <a href=""><img src="assets/img/quangcao/depdunggu.png"></a>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="products">
+            <h3>Khuyến mãi Online</h3>
+            <ul class="products-tabs">
+                <li><a href=""><img src="assets/img/khuyenmai/flashsale.png"></a></li>
+                <li><a href=""><img src="assets/img/khuyenmai/dacquyen.png"></a></li>
+                <li><a href=""><img src="assets/img/khuyenmai/only.png"></a></li>
+                <li><a href=""><span class="allimg">Điện Thoại</span></a></li>
+                <li><a href=""><span class="allimg">Apple</span></a></li>
+                <li><a href=""><span class="allimg">Laptop</span></a></li>
+                <li><a href=""><span class="allimg">Phụ Kiện</span></a></li>
+                <li><a href=""><span class="allimg">Đồng Hồ</span></a></li>
+            </ul>
+        </div>
+        <div class="block-product">
+            <div class="box-content">
+                <div class="flashsale-block">
+                    <div class="timeline-title">
+                        <div class="listing-timeline">
+                            <a href="">
+                                <span class="title-end">Chỉ còn:</span>
+                                <span class="countdown-time">
+                                    <label id="hour">00</label><span>:</span>
+                                    <label id="minute">00</label><span>:</span>
+                                    <label id="second">00</label>
+                                </span>
+                            </a>
+                            <a href=""><span>Sắp diễn ra 00:00 - 00:00</span></a>
+                        </div>
+                    </div>
+                    <div class="box-scroll"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
