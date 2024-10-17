@@ -7,7 +7,6 @@
 
 html {
     background-color: #F2F4F7;
-    /* height: 2000px; */
 }
 
 ul {
@@ -192,16 +191,18 @@ header ul li:nth-child(5):hover {
 .address-form {
     font-size: 14px;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 97px;
+    padding-bottom: 120px;
     display: flex;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     display: none;
-    z-index: 2;
 }
 
 .address-form-content {
@@ -387,7 +388,6 @@ header ul li:nth-child(5):hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .big-banner .ti-close {
@@ -636,3 +636,5 @@ header ul li:nth-child(5):hover {
 .box-content .flashsale-block .timeline-title .listing-timeline a:nth-child(2) {
     color: #344054;
 }
+
+/* danh sách sản phẩm khuyến mãi */
