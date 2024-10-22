@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thegioididong.com</title>
+    <title>thegioididong.com - Điện thoại, Laptop, Phụ kiện, Đồng hồ chính hãng</title>
+    <link rel="icon" href="assets/img/logo/logo-title.png" type="image/jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -23,26 +25,25 @@
                             class="ti-angle-right"></i></a></li>
                 <div class="address-form">
                     <div class="address-form-content">
-                        <div class="search">
-                            <b>Chọn địa chỉ nhận hàng <a href="#"><span id="address-close"><i
-                                            class="ti-close"></i></span></a></b>
-                            <form action="">
-                                <select name="" id="">
-                                    <option value="#">--Chọn địa điểm</option>
-                                    <option value="#">Hồ Chí Minh</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="#">--Chọn Quận\Huyện</option>
-                                    <option value="#">Quận 9</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="#">--Chọn Phường\Xã</option>
-                                    <option value="#">Phường Long Thạnh Mỹ</option>
-                                </select>
-                                <input type="text" placeholder="Số nhà, tên đường">
-                                <button>Xác nhận</button>
-                            </form>
-                        </div>
+                        <h2>Chọn địa chỉ nhận hàng <a href="#"><span id="address-close"><i
+                                        class="ti-close"></i></span></a></h2>
+                        <p>Địa chỉ đang chọn: <span>Hồ Chí Minh</span></p>
+                        <form action="">
+                            <select name="" id="">
+                                <option value="#">--Chọn địa điểm</option>
+                                <option value="#">Hồ Chí Minh</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="#">--Chọn Quận\Huyện</option>
+                                <option value="#">Quận 9</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="#">--Chọn Phường\Xã</option>
+                                <option value="#">Phường Long Thạnh Mỹ</option>
+                            </select>
+                            <input type="text" placeholder="Số nhà, tên đường">
+                            <button>Xác nhận</button>
+                        </form>
                     </div>
                 </div>
             </ul>
@@ -242,169 +243,521 @@
                     <section class="slider-product-one">
                         <div class="container">
                             <div class="slider-product-one-content">
-                                <div class="slider-product-one-content-items">
-                                    <div class="product-col">
-                                        <div class="slider-product-one-content-item">
-                                            <img
-                                                src="assets/img/sanpham/samsung-galaxy-z-flip5-kem-thumbnew-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>Samsung Galaxy Z Flip5 5G 8GB/512GB</li>
-                                                <li>14.190.000₫</li>
-                                                <li><a href="">27.990.000₫</a> <span>-49%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
+                                <div class="slider-product-one-content-container">
+                                    <div class="slider-product-one-content-items-content">
+                                        <div class="slider-product-one-content-items">
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-z-flip5-kem-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy Z Flip5 5G 8GB/512GB</li>
+                                                        <li>14.190.000₫</li>
+                                                        <li><a href="">27.990.000₫</a> <span>-49%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img src="assets/img/sanpham/xiaomi-14-white-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Xiaomi 14 5G 12GB/256GB</li>
+                                                        <li>16.990.000₫</li>
+                                                        <li><a href="">22.990.000₫</a><span>-26%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP Pavilion 15 eg3098TU i3 1315U (8C5L9PA)</li>
+                                                        <li>11.890.000₫</li>
+                                                        <li><a href="">15.290.000₫</a> <span>-22%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/chuot-bluetooth-silent-xiaomi-hlk404-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Chuột Bluetooth Silent Xiaomi HLK404</li>
+                                                        <li>210.000₫</li>
+                                                        <li><a href="">350.000₫</a><span>-40%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>ELIO 30 mm Nữ EL101-01</li>
+                                                        <li>290.000₫</li>
+                                                        <li><a href="">990.000₫</a> <span>-70%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/mi-band-8-active-hong-tb-2-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Xiaomi Mi Band 8 Active</li>
+                                                        <li>490.000₫</li>
+                                                        <li><a href="">690.000₫</a><span>-28%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-a05s-black-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy A05s 4GB/128GB</li>
+                                                        <li>2.990.000₫</li>
+                                                        <li><a href="">3.990.000₫</a> <span>-25%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-15s-fq5162tu-i5-7c134pa-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP 15s fq5162TU i5 1235U (7C134PA)</li>
+                                                        <li>15.990.000₫</li>
+                                                        <li><a href="">18.890.000₫</a><span>-19%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>ELIO 40 mm Nam EL099-01</li>
+                                                        <li>320.000₫</li>
+                                                        <li><a href="">990.000₫</a> <span>-67%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/adapter-sac-type-c-pd-25w-samsung-ep-t2510n-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Sạc Samsung EP-T2510N</li>
+                                                        <li>390.000₫</li>
+                                                        <li><a href="">550.000₫</a><span>-29%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP Pavilion 15 eg3094TU i5 1335U (8C5L5PA)</li>
+                                                        <li>16.490.000₫</li>
+                                                        <li><a href="">19.990.000₫</a> <span>-17%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-tab-s9-plus-kem-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy Tab S9+ 5G 12GB/256GB</li>
+                                                        <li>17.990.000₫</li>
+                                                        <li><a href="">28.990.000₫</a><span>-37%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="slider-product-one-content-item">
-                                            <img src="assets/img/sanpham/xiaomi-14-white-thumbnew-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>Xiaomi 14 5G 12GB/256GB</li>
-                                                <li>16.990.000₫</li>
-                                                <li><a href="">22.990.000₫</a><span>-26%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
+                                        <div class="slider-product-one-content-items">
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-tab-s9-plus-kem-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy Z Flip5 5G 8GB/512GB</li>
+                                                        <li>14.190.000₫</li>
+                                                        <li><a href="">27.990.000₫</a> <span>-49%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-tab-s9-plus-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Xiaomi 14 5G 12GB/256GB</li>
+                                                        <li>16.990.000₫</li>
+                                                        <li><a href="">22.990.000₫</a><span>-26%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP Pavilion 15 eg3098TU i3 1315U (8C5L9PA)</li>
+                                                        <li>11.890.000₫</li>
+                                                        <li><a href="">15.290.000₫</a> <span>-22%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/chuot-bluetooth-silent-xiaomi-hlk404-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Chuột Bluetooth Silent Xiaomi HLK404</li>
+                                                        <li>210.000₫</li>
+                                                        <li><a href="">350.000₫</a><span>-40%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>ELIO 30 mm Nữ EL101-01</li>
+                                                        <li>290.000₫</li>
+                                                        <li><a href="">990.000₫</a> <span>-70%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/mi-band-8-active-hong-tb-2-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Xiaomi Mi Band 8 Active</li>
+                                                        <li>490.000₫</li>
+                                                        <li><a href="">690.000₫</a><span>-28%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-a05s-black-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy A05s 4GB/128GB</li>
+                                                        <li>2.990.000₫</li>
+                                                        <li><a href="">3.990.000₫</a> <span>-25%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-15s-fq5162tu-i5-7c134pa-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP 15s fq5162TU i5 1235U (7C134PA)</li>
+                                                        <li>15.990.000₫</li>
+                                                        <li><a href="">18.890.000₫</a><span>-19%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>ELIO 40 mm Nam EL099-01</li>
+                                                        <li>320.000₫</li>
+                                                        <li><a href="">990.000₫</a> <span>-67%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/adapter-sac-type-c-pd-25w-samsung-ep-t2510n-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Sạc Samsung EP-T2510N</li>
+                                                        <li>390.000₫</li>
+                                                        <li><a href="">550.000₫</a><span>-29%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP Pavilion 15 eg3094TU i5 1335U (8C5L5PA)</li>
+                                                        <li>16.490.000₫</li>
+                                                        <li><a href="">19.990.000₫</a> <span>-17%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-tab-s9-plus-kem-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy Tab S9+ 5G 12GB/256GB</li>
+                                                        <li>17.990.000₫</li>
+                                                        <li><a href="">28.990.000₫</a><span>-37%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-product-one-content-items">
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/vi-tinh-microlab-b26-den-thumb-600x600.jpeg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy Z Flip5 5G 8GB/512GB</li>
+                                                        <li>14.190.000₫</li>
+                                                        <li><a href="">27.990.000₫</a> <span>-49%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/amazfit-active-edge-den-tn-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Xiaomi 14 5G 12GB/256GB</li>
+                                                        <li>16.990.000₫</li>
+                                                        <li><a href="">22.990.000₫</a><span>-26%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP Pavilion 15 eg3098TU i3 1315U (8C5L9PA)</li>
+                                                        <li>11.890.000₫</li>
+                                                        <li><a href="">15.290.000₫</a> <span>-22%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/chuot-bluetooth-silent-xiaomi-hlk404-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Chuột Bluetooth Silent Xiaomi HLK404</li>
+                                                        <li>210.000₫</li>
+                                                        <li><a href="">350.000₫</a><span>-40%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>ELIO 30 mm Nữ EL101-01</li>
+                                                        <li>290.000₫</li>
+                                                        <li><a href="">990.000₫</a> <span>-70%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/mi-band-8-active-hong-tb-2-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Xiaomi Mi Band 8 Active</li>
+                                                        <li>490.000₫</li>
+                                                        <li><a href="">690.000₫</a><span>-28%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-a05s-black-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy A05s 4GB/128GB</li>
+                                                        <li>2.990.000₫</li>
+                                                        <li><a href="">3.990.000₫</a> <span>-25%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-15s-fq5162tu-i5-7c134pa-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP 15s fq5162TU i5 1235U (7C134PA)</li>
+                                                        <li>15.990.000₫</li>
+                                                        <li><a href="">18.890.000₫</a><span>-19%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>ELIO 40 mm Nam EL099-01</li>
+                                                        <li>320.000₫</li>
+                                                        <li><a href="">990.000₫</a> <span>-67%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/adapter-sac-type-c-pd-25w-samsung-ep-t2510n-thumb-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Sạc Samsung EP-T2510N</li>
+                                                        <li>390.000₫</li>
+                                                        <li><a href="">550.000₫</a><span>-29%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-col">
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>HP Pavilion 15 eg3094TU i5 1335U (8C5L5PA)</li>
+                                                        <li>16.490.000₫</li>
+                                                        <li><a href="">19.990.000₫</a> <span>-17%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-product-one-content-item">
+                                                    <img
+                                                        src="assets/img/sanpham/samsung-galaxy-tab-s9-plus-kem-thumbnew-600x600.jpg">
+                                                    <div class="slider-product-one-content-text">
+                                                        <li>Samsung Galaxy Tab S9+ 5G 12GB/256GB</li>
+                                                        <li>17.990.000₫</li>
+                                                        <li><a href="">28.990.000₫</a><span>-37%</span></li>
+                                                        <li><img src="assets/img/sanpham/flash-sale.png">
+                                                            <p>Còn 10/10 suất</p>
+                                                        </li>
+                                                        <li><a href="">Mua ngay</a></li>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product-col">
-                                        <div class="slider-product-one-content-item">
-                                            <img
-                                                src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>HP Pavilion 15 eg3098TU i3 1315U (8C5L9PA)</li>
-                                                <li>11.890.000₫</li>
-                                                <li><a href="">15.290.000₫</a> <span>-22%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                        <div class="slider-product-one-content-item">
-                                            <img
-                                                src="assets/img/sanpham/chuot-bluetooth-silent-xiaomi-hlk404-thumb-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>Chuột Bluetooth Silent Xiaomi HLK404</li>
-                                                <li>210.000₫</li>
-                                                <li><a href="">350.000₫</a><span>-40%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-col">
-                                        <div class="slider-product-one-content-item">
-                                            <img src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>ELIO 30 mm Nữ EL101-01</li>
-                                                <li>290.000₫</li>
-                                                <li><a href="">990.000₫</a> <span>-70%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                        <div class="slider-product-one-content-item">
-                                            <img src="assets/img/sanpham/mi-band-8-active-hong-tb-2-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>Xiaomi Mi Band 8 Active</li>
-                                                <li>490.000₫</li>
-                                                <li><a href="">690.000₫</a><span>-28%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-col">
-                                        <div class="slider-product-one-content-item">
-                                            <img
-                                                src="assets/img/sanpham/samsung-galaxy-a05s-black-thumbnew-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>Samsung Galaxy A05s 4GB/128GB</li>
-                                                <li>2.990.000₫</li>
-                                                <li><a href="">3.990.000₫</a> <span>-25%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                        <div class="slider-product-one-content-item">
-                                            <img src="assets/img/sanpham/hp-15s-fq5162tu-i5-7c134pa-thumb-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>HP 15s fq5162TU i5 1235U (7C134PA)</li>
-                                                <li>15.990.000₫</li>
-                                                <li><a href="">18.890.000₫</a><span>-19%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-col">
-                                        <div class="slider-product-one-content-item">
-                                            <img src="assets/img/sanpham/elio-el099-01-nam-thumb-fix-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>ELIO 40 mm Nam EL099-01</li>
-                                                <li>320.000₫</li>
-                                                <li><a href="">990.000₫</a> <span>-67%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                        <div class="slider-product-one-content-item">
-                                            <img
-                                                src="assets/img/sanpham/adapter-sac-type-c-pd-25w-samsung-ep-t2510n-thumb-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>Sạc Samsung EP-T2510N</li>
-                                                <li>390.000₫</li>
-                                                <li><a href="">550.000₫</a><span>-29%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-col">
-                                        <div class="slider-product-one-content-item">
-                                            <img
-                                                src="assets/img/sanpham/hp-pavilion-15-eg3098tu-i3-8c5l9pa-thumb-3-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>HP Pavilion 15 eg3094TU i5 1335U (8C5L5PA)</li>
-                                                <li>16.490.000₫</li>
-                                                <li><a href="">19.990.000₫</a> <span>-17%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
-                                        <div class="slider-product-one-content-item">
-                                            <img
-                                                src="assets/img/sanpham/samsung-galaxy-tab-s9-plus-kem-thumbnew-600x600.jpg">
-                                            <div class="slider-product-one-content-text">
-                                                <li>Samsung Galaxy Tab S9+ 5G 12GB/256GB</li>
-                                                <li>17.990.000₫</li>
-                                                <li><a href="">28.990.000₫</a><span>-37%</span></li>
-                                                <li><img src="assets/img/sanpham/flash-sale.png">
-                                                    <p>Vừa mở bán</p>
-                                                </li>
-                                                <li><a href="">Mua ngay</a></li>
-                                            </div>
-                                        </div>
+                                    <div class="slider-product-one-content-btn">
+                                        <i class="ti-angle-left ti-angel-left-2"></i>
+                                        <i class="ti-angle-right ti-angel-right-2"></i>
                                     </div>
                                 </div>
                             </div>
@@ -413,6 +766,195 @@
                 </div>
             </div>
             <a href="" class="more"><span>Xem thêm sản phẩm</span> <i class="ti-angle-right"></i></a>
+        </div>
+        <!---------------slide banner--------------->
+        <div class="slider">
+            <div class="slider-close"><i class="ti-close"></i></div>
+            <div class="slider-content">
+                <img src="assets/img/slide/4ce18475677ff726d0328529b1310b6e.png">
+                <img src="assets/img/slide/7bbc493498e8e53d9534f174c4f1f4f6.png">
+                <img src="assets/img/slide/946e6c1fdad3c9d5975136952b229980.png">
+                <img src="assets/img/slide/c0ce731eb11bfe52eb439338eac0f810.png">
+                <img src="assets/img/slide/cf3d2057acbeac51ffc660da7dd79edd.png">
+                <img src="assets/img/slide/fc06ca0c5abcc337506c7d16877b3bd6.jpg">
+            </div>
+            <div class="btns">
+                <div class="btn-left btn"><i class='bx bx-chevron-left'></i></div>
+                <div class="btn-right btn"><i class='bx bx-chevron-right'></i></div>
+            </div>
+        </div>
+        <!---------------sản phẩm gợi ý--------------->
+        <div class="block-product-gallery block-product">
+            <h3>Gợi ý cho bạn</h3>
+            <section class="list-product slider-product-one">
+                <div class="container">
+                    <div class="list-product-items slider-product-one-content-items">
+                        <div class="list-product-item-col product-col">
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"><span>Trả góp 0%</span></div>
+                                <img src="assets/img/goi_y/masstel-izi-10-4g-xanh-thumb-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="support"><img src="assets/img/goi_y/icon3-50x50.png">
+                                        <p>HỖ TRỢ 4G</p>
+                                    </li>
+                                    <li class="title">Masstel IZI 10 4G</li>
+                                    <li class="info"><span>QQVGA</span> <span>1.77"</span></li>
+                                    <li class="price">410.000₫</li>
+                                    <li class="rate"><i class='bx bxs-star'></i> <span>3.6 (45)</span></li>
+                                </div>
+                            </div>
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"></div>
+                                <img src="assets/img/goi_y/samsung-galaxy-s23-fe-mint-thumbnew-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="title">Samsung Galaxy S23 FE 5G 8GB/128GB Xanh...</li>
+                                    <li class="info"><span>Full HD+</span> <span>6.6"</span></li>
+                                    <li class="online"><span>Online giá rẻ quá</span></li>
+                                    <li class="price">16.990.000₫</li>
+                                    <li class="price-old"><a href="">22.990.000₫ </a><span>-26%</span></li>
+                                    <li class="rate"><i class='bx bxs-star'></i><span>4.3 (593)</span></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product-item-col product-col">
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"><span>Trả góp 0%</span></div>
+                                <img src="assets/img/goi_y/masstel-izi-10-4g-xanh-thumb-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="support"><img src="assets/img/goi_y/icon3-50x50.png">
+                                        <p>HỖ TRỢ 4G</p>
+                                    </li>
+                                    <li class="title">Masstel IZI 10 4G</li>
+                                    <li class="info"><span>QQVGA</span> <span>1.77"</span></li>
+                                    <li class="price">410.000₫</li>
+                                    <li class="rate"><i class='bx bxs-star'></i> <span>3.6 (45)</span></li>
+                                </div>
+                            </div>
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"></div>
+                                <img src="assets/img/goi_y/samsung-galaxy-s23-fe-mint-thumbnew-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="title">Samsung Galaxy S23 FE 5G 8GB/128GB Xanh...</li>
+                                    <li class="info"><span>Full HD+</span> <span>6.6"</span></li>
+                                    <li class="online"><span>Online giá rẻ quá</span></li>
+                                    <li class="price">16.990.000₫</li>
+                                    <li class="price-old"><a href="">22.990.000₫ </a><span>-26%</span></li>
+                                    <li class="rate"><i class='bx bxs-star'></i><span>4.3 (593)</span></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product-item-col product-col">
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"><span>Trả góp 0%</span></div>
+                                <img src="assets/img/goi_y/masstel-izi-10-4g-xanh-thumb-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="support"><img src="assets/img/goi_y/icon3-50x50.png">
+                                        <p>HỖ TRỢ 4G</p>
+                                    </li>
+                                    <li class="title">Masstel IZI 10 4G</li>
+                                    <li class="info"><span>QQVGA</span> <span>1.77"</span></li>
+                                    <li class="price">410.000₫</li>
+                                    <li class="rate"><i class='bx bxs-star'></i> <span>3.6 (45)</span></li>
+                                </div>
+                            </div>
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"></div>
+                                <img src="assets/img/goi_y/samsung-galaxy-s23-fe-mint-thumbnew-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="title">Samsung Galaxy S23 FE 5G 8GB/128GB Xanh...</li>
+                                    <li class="info"><span>Full HD+</span> <span>6.6"</span></li>
+                                    <li class="online"><span>Online giá rẻ quá</span></li>
+                                    <li class="price">16.990.000₫</li>
+                                    <li class="price-old"><a href="">22.990.000₫ </a><span>-26%</span></li>
+                                    <li class="rate"><i class='bx bxs-star'></i><span>4.3 (593)</span></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product-item-col product-col">
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"><span>Trả góp 0%</span></div>
+                                <img src="assets/img/goi_y/masstel-izi-10-4g-xanh-thumb-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="support"><img src="assets/img/goi_y/icon3-50x50.png">
+                                        <p>HỖ TRỢ 4G</p>
+                                    </li>
+                                    <li class="title">Masstel IZI 10 4G</li>
+                                    <li class="info"><span>QQVGA</span> <span>1.77"</span></li>
+                                    <li class="price">410.000₫</li>
+                                    <li class="rate"><i class='bx bxs-star'></i> <span>3.6 (45)</span></li>
+                                </div>
+                            </div>
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"></div>
+                                <img src="assets/img/goi_y/samsung-galaxy-s23-fe-mint-thumbnew-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="title">Samsung Galaxy S23 FE 5G 8GB/128GB Xanh...</li>
+                                    <li class="info"><span>Full HD+</span> <span>6.6"</span></li>
+                                    <li class="online"><span>Online giá rẻ quá</span></li>
+                                    <li class="price">16.990.000₫</li>
+                                    <li class="price-old"><a href="">22.990.000₫ </a><span>-26%</span></li>
+                                    <li class="rate"><i class='bx bxs-star'></i><span>4.3 (593)</span></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product-item-col product-col">
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"><span>Trả góp 0%</span></div>
+                                <img src="assets/img/goi_y/masstel-izi-10-4g-xanh-thumb-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="support"><img src="assets/img/goi_y/icon3-50x50.png">
+                                        <p>HỖ TRỢ 4G</p>
+                                    </li>
+                                    <li class="title">Masstel IZI 10 4G</li>
+                                    <li class="info"><span>QQVGA</span> <span>1.77"</span></li>
+                                    <li class="price">410.000₫</li>
+                                    <li class="rate"><i class='bx bxs-star'></i> <span>3.6 (45)</span></li>
+                                </div>
+                            </div>
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"></div>
+                                <img src="assets/img/goi_y/samsung-galaxy-s23-fe-mint-thumbnew-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="title">Samsung Galaxy S23 FE 5G 8GB/128GB Xanh...</li>
+                                    <li class="info"><span>Full HD+</span> <span>6.6"</span></li>
+                                    <li class="online"><span>Online giá rẻ quá</span></li>
+                                    <li class="price">16.990.000₫</li>
+                                    <li class="price-old"><a href="">22.990.000₫ </a><span>-26%</span></li>
+                                    <li class="rate"><i class='bx bxs-star'></i><span>4.3 (593)</span></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product-item-col product-col">
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"><span>Trả góp 0%</span></div>
+                                <img src="assets/img/goi_y/masstel-izi-10-4g-xanh-thumb-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="support"><img src="assets/img/goi_y/icon3-50x50.png">
+                                        <p>HỖ TRỢ 4G</p>
+                                    </li>
+                                    <li class="title">Masstel IZI 10 4G</li>
+                                    <li class="info"><span>QQVGA</span> <span>1.77"</span></li>
+                                    <li class="price">410.000₫</li>
+                                    <li class="rate"><i class='bx bxs-star'></i> <span>3.6 (45)</span></li>
+                                </div>
+                            </div>
+                            <div class="list-product-content-item slider-product-one-content-item">
+                                <div class="tragop"></div>
+                                <img src="assets/img/goi_y/samsung-galaxy-s23-fe-mint-thumbnew-600x600.jpg">
+                                <div class="list-product-content-text">
+                                    <li class="title">Samsung Galaxy S23 FE 5G 8GB/128GB Xanh...</li>
+                                    <li class="info"><span>Full HD+</span> <span>6.6"</span></li>
+                                    <li class="online"><span>Online giá rẻ quá</span></li>
+                                    <li class="price">16.990.000₫</li>
+                                    <li class="price-old"><a href="">22.990.000₫ </a><span>-26%</span></li>
+                                    <li class="rate"><i class='bx bxs-star'></i><span>4.3 (593)</span></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a href="#" class="gallery-more more"><span>Xem thêm sản phẩm</span> <i class="ti-angle-down"></i></a>
         </div>
     </div>
     <script src="script.js"></script>
