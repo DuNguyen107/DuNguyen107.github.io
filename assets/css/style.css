@@ -832,7 +832,8 @@ header ul li:nth-child(5):hover {
     height: 900px !important;
 }
 
-.block-product-gallery h3 {
+.block-product-gallery h3,
+.list-image h3 {
     height: 38px;
     color: #1d2939;
     font: 24px Arial, Helvetica, sans-serif;
@@ -895,6 +896,11 @@ header ul li:nth-child(5):hover {
     margin-right: 5px;
 }
 
+.list-product-content-text .give480k {
+    width: 80%;
+    background: linear-gradient(to right, #3bacf0, #1b6dc1);
+}
+
 .list-product-content-text .title {
     font-size: 14px;
     margin: 0 0 8px;
@@ -951,4 +957,97 @@ header ul li:nth-child(5):hover {
     position: absolute;
     bottom: 0;
     left: 43.8%;
+}
+
+/* -------------gian hàng ưu đãi------------- */
+.list-image {
+    height: 525px;
+    margin: 10px 0;
+}
+
+.list-image h3 {
+    margin: 0 0 10px;
+}
+
+.list-image-item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.list-image-item img {
+    width: 25%;
+    height: 468px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* -------------bài tin------------- */
+.block-news {
+    background-color: #fff;
+    padding-bottom: 5px;
+    height: 380px;
+    width: 1200px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.block-news h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #1d2939;
+    margin: 10px 0 0 10px;
+}
+
+.news-menu {
+    display: flex;
+    margin: 10px 0 0 10px;
+    justify-content: flex-start;
+}
+
+.news-menu .news-item {
+    font-size: 14px;
+    color: #101828;
+    margin-right: 5px;
+    padding: 8px 16px;
+    border: 1.5px solid #eaecf0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.news-menu .news-item:nth-child(1) {
+    border: 2px solid black;
+    font-weight: 700;
+}
+
+.list-news {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 10px;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.list-news .news-content img {
+    width: 280px;
+    height: 162px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.list-news .news-content p {
+    color: #101828;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.news-more {
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+    color: #288ad6;
+    font-weight: 700;
 }
