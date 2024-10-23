@@ -94,3 +94,21 @@ const slideclose = document.querySelector('.slider-close');
 slideclose.addEventListener("click", function () {//them 1 su kien
     document.querySelector('.slider').style.display = 'none';
 })
+
+//về công ty
+const viewMoreBtn = document.querySelector('.view-more-btn');
+const hiddenItems = document.querySelectorAll('.hidden-item');
+let isExpanded = false;
+
+viewMoreBtn.addEventListener('click', () => {
+    hiddenItems.forEach(item => {
+        if (isExpanded) {
+            item.style.display = 'none';
+        } else {
+            item.style.display = 'block';
+        }
+    });
+
+    isExpanded = !isExpanded;
+    viewMoreBtn.innerHTML = isExpanded ? 'Thu gọn<i class="ti-angle-up"></i>' : 'Xem thêm<i class="ti-angle-down"></i>';
+});

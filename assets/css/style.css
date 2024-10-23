@@ -66,10 +66,8 @@ header ul li:nth-child(2) i {
     position: absolute;
     top: 50%;
     left: 10px;
-    /* Khoảng cách icon cách trái */
     transform: translateY(-50%);
     border-radius: 50%;
-    /* Bo tròn icon */
     height: 20px;
     width: 20px;
     text-align: center;
@@ -96,7 +94,6 @@ header ul li:nth-child(4) button {
     height: 42px;
     line-height: 42px;
     text-align: center;
-    /* margin-right: 0px; */
     background-color: transparent;
     position: relative;
     cursor: pointer;
@@ -348,11 +345,6 @@ header ul li:nth-child(5):hover {
 .big-banner a {
     width: 1200px;
     min-width: 1200px;
-    /* height: fit-content;
-    display: block;
-    overflow: hidden;
-    margin: 0 auto;
-    position: absolute; */
     display: block;
     position: relative;
 }
@@ -363,9 +355,7 @@ header ul li:nth-child(5):hover {
     position: relative;
     border-radius: 8px;
     object-fit: cover;
-    /* gap: 16px; */
     display: block;
-    /* margin: 0 auto; */
 }
 
 /* -------------menu-products------------- */
@@ -378,7 +368,6 @@ header ul li:nth-child(5):hover {
 .products {
     padding: 20px 0 0 0;
     margin-right: 20px;
-    /* border-radius: 12px; */
     overflow: hidden;
     width: 1200px;
 }
@@ -467,7 +456,6 @@ header ul li:nth-child(5):hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* padding: 3px 0; */
 }
 
 .main-container .block-product {
@@ -486,14 +474,8 @@ header ul li:nth-child(5):hover {
 .main-container .box-content .flashsale-block {
     margin: 0;
     padding: 0;
-    /* border-radius: 20px; */
-    /* margin: 30px auto; */
     width: 1200px;
     position: relative;
-    /* padding: 10px; */
-    /* background-color: #ff685f; */
-    /* border-radius: 12px; */
-    /* margin: 30px auto; */
     max-width: 1200px;
     text-align: center;
 }
@@ -545,7 +527,6 @@ header ul li:nth-child(5):hover {
 .flashsale-block .timeline-title .listing-timeline a .title-end {
     font-size: 16px;
     line-height: 24px;
-    /* border-radius: 50px; */
 }
 
 .flashsale-block .timeline-title .listing-timeline a .countdown-time label {
@@ -553,10 +534,7 @@ header ul li:nth-child(5):hover {
     background-color: #fff;
     width: 24px;
     height: 24px;
-    /* line-height: 24px; */
     font-weight: 600;
-    /* padding: 0; */
-    /* min-width: 0; */
     border-radius: 5px;
     display: inline-block;
     text-align: center;
@@ -580,14 +558,12 @@ header ul li:nth-child(5):hover {
 
 /* -------------danh sách sản phẩm khuyến mãi------------- */
 .slider-product-one-content {
-    /* background-color: #FED100; */
     padding: 12px;
 }
 
 .slider-product-one-content-items {
     display: flex;
     justify-content: space-evenly;
-    /* z-index: 2; */
 }
 
 .slider-product-one-content-item:hover>img {
@@ -600,7 +576,6 @@ header ul li:nth-child(5):hover {
 
 .slider-product-one-content-item {
     width: 190px;
-    /* height: 380px; */
     background-color: #fff;
     padding: 10px 12px 0;
     margin-bottom: 10px;
@@ -662,7 +637,6 @@ header ul li:nth-child(5):hover {
     width: 100%;
     background: linear-gradient(to right, #ffe59c, #ffb305);
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     border-radius: 40px;
     display: inline-block;
     margin-bottom: 5px;
@@ -737,7 +711,6 @@ header ul li:nth-child(5):hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 380px; */
     transform: translateY(-48.5%);
 }
 
@@ -1050,4 +1023,160 @@ header ul li:nth-child(5):hover {
     bottom: 5%;
     color: #288ad6;
     font-weight: 700;
+}
+
+/* -------------Mọi người cũng tìm kiếm------------- */
+.people-search {
+    margin-top: 20px;
+    height: auto;
+}
+
+.list-search ul {
+    margin: 10px 0 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #333333;
+}
+
+.list-search ul li {
+    background: #f2f4f7;
+    border-radius: 16px;
+    padding: 2px 8px;
+    margin: 10px 8px 0 0;
+}
+
+/* -------------footer------------- */
+.contact-other {
+    width: 100%;
+    list-style: none;
+    background-color: #fff;
+    color: #333333;
+    font-size: 14px;
+    height: auto !important;
+    margin: 10px 0 10px 0;
+    border-top: 1px solid rgb(233, 230, 230);
+    transition: 0.5s;
+}
+
+.contact-other .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-other .title {
+    color: #1d2939;
+    font-weight: 700;
+}
+
+.contact-other li {
+    margin: 10px 0;
+}
+
+.contact-other .phone {
+    width: 23%;
+}
+
+.contact-other .phone span {
+    color: #2f80ed;
+    font-weight: 700;
+}
+
+.contact-other .company {
+    width: 15%;
+}
+
+.contact-other .company .hidden-item {
+    display: none;
+}
+
+.contact-other .info-other {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+.contact-other .info-other button {
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    color: #333333;
+}
+
+.contact-other .info-other button p {
+    display: inline-block;
+}
+
+.contact-other .info-other button i {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.contact-other .link {
+    width: 29%;
+}
+
+.contact-other .link p {
+    margin-top: 10px;
+}
+
+.contact-other .link .logo {
+    margin: 10px 0;
+}
+
+.contact-other .link .logo img {
+    height: 24px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.contact-other .link .social a {
+    color: #1b6dc1;
+    margin-right: 5px;
+}
+
+.contact-other .link .social img {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 8px;
+    transform: translateY(20%);
+}
+
+.contact-other .link .certify img {
+    object-fit: cover;
+}
+
+.contact-other .link .certify img:nth-child(1) {
+    width: 79px;
+    height: 24px;
+}
+
+.contact-other .link .certify img:nth-child(2) {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-other .link .certify img:nth-child(4) {
+    width: 85px;
+    height: 35px;
+    border-radius: 5px;
+    transform: translateY(35%);
+}
+
+.company p:hover,
+.info-other p:hover {
+    color: #2f80ed;
+}
+
+/* -------------copyright------------- */
+.copyright {
+    font-size: 12px;
+    color: #666666;
+}
+
+.copyright span {
+    color: #288ad6;
 }
