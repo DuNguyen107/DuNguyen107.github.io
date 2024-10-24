@@ -39,7 +39,7 @@ updateButtonState();
 
 // Sự kiện click cho nút bên phải
 rightbtn2.addEventListener("click", function () {
-    if (index < imgNuber2.length - 1) {
+    if (index < imgNuber2.length - 2) {
         index = index + 1;
         document.querySelector(".slider-product-one-content-items-content").style.right = index * 100 + "%";
         updateButtonState();
