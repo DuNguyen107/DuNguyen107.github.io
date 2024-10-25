@@ -196,7 +196,7 @@ header ul li:nth-child(5):hover {
     font-size: 14px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.7);
-    top: 0;
+    top: 16.2%;
     left: 0;
     bottom: 0;
     right: 0;
@@ -213,12 +213,13 @@ header ul li:nth-child(5):hover {
     background-color: #fff;
     margin-top: 30px;
     border-radius: 8px;
+    padding: 5px 15px;
+    margin-top: -75px;
 }
 
 .address-form-content h2 {
     font-size: 18px;
     padding: 12px 0;
-
     position: relative;
 }
 
@@ -227,7 +228,7 @@ header ul li:nth-child(5):hover {
     position: absolute;
     height: 30px;
     padding: 0 6px;
-    right: 12px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     color: #999da5;
@@ -237,9 +238,74 @@ header ul li:nth-child(5):hover {
     margin-top: -5px;
 }
 
-.address-form-content form {
-    text-align: center;
+.search-address {
+    margin: 10px 0;
+    font-size: 14px;
+    position: relative;
+}
 
+.search-address i {
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    left: 6px;
+    top: 8px;
+}
+
+.search-address input {
+    width: 100%;
+    padding: 8px 28px;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+    outline: none;
+}
+
+.search-address p {
+    margin: 10px 0;
+    text-align: center;
+    color: #667085;
+}
+
+.choose-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.choose-menu a {
+    width: calc(100%/3);
+    color: #333333;
+    border-bottom: 3px solid #f6f7f8;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.choose-menu a:first-child {
+    border-color: #2377e8;
+    color: #2377e8;
+    font-weight: bold;
+}
+
+.choose-menu-content {
+    height: 220px;
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: 39vh;
+    overflow: auto;
+    margin-top: 15px;
+}
+
+.choose-menu-content a {
+    padding: 10px 0;
+    width: calc(100% - 10px);
+    color: #333333;
+    border-bottom: 1px solid #e6e7e9;
+}
+
+.choose-menu-content a:hover {
+    background-color: #f1f8fe;
+    border: none;
 }
 
 /* -------------menu-bar------------- */
@@ -256,7 +322,7 @@ header ul li:nth-child(5):hover {
     max-height: 500px;
     overflow-x: auto;
     overflow-y: auto;
-    z-index: 2;
+    z-index: 10;
 }
 
 .menu-bar-content li:nth-child(7) .navmwg,
