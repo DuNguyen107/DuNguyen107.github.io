@@ -13,45 +13,77 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
-        body {
-            overflow: hidden;
-        }
-
-        .cart {
-            margin: 100px;
-            transform: translateX(45%);
-            text-align: center;
-            font-size: 14px;
-            color: #333;
-            width: 600px;
-            height: 171px;
-            display: block;
-        }
-
-        .cart p {
-            margin: 10px 0;
-        }
-
-        .cart img {
-            width: 80px;
+        html {
             height: auto;
-            object-fit: cover;
+            overflow-y: auto;
         }
 
-        .cart span {
-            color: #288ad6;
+        .block-content {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+            font-family: ROBOTO LIGHT;
+            width: 100%;
+            margin: 65px 0 140px 0;
         }
 
-        .back {
-            border: 1px solid #288ad6;
-            border-radius: 5px;
-            padding: 10px 0;
+        .block-content .image {
+            max-width: 540px;
+            height: auto;
+        }
+
+        .block-content .phone {
+            background-color: #fff;
+            box-shadow: 0 0 16px rgba(0, 0, 0, .11);
+            border-radius: 8px;
+            padding: 85px 99px;
+        }
+
+        .block-content .phone p {
+            font-size: 24px;
+            font-weight: normal;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 25px;
+        }
+
+        .fill-phone {
+            position: relative;
+        }
+
+        .fill-phone i {
+            position: absolute;
+            font-size: 25px;
+            color: #31639d;
+            top: 50%;
+            left: 15px;
+            transform: translate(0, -50%);
+        }
+
+        .fill-phone input {
+            border: 1px solid #e0e0e0;
+            outline: none;
+            border-radius: 100px;
+            height: 48px;
+            padding: 0 50px;
+            font-size: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .block-content .phone button {
+            background-color: #f96f3a;
+            box-shadow: unset;
+            border-radius: 100px;
+            width: 302px;
+            height: 50px;
+            border: none;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 17px;
+            max-width: 100%;
+            margin-top: 25px;
             cursor: pointer;
-        }
-
-        .back a {
-            color: #288ad6;
-            font-weight: 700;
         }
     </style>
 </head>
@@ -312,18 +344,112 @@
             </div>
         </div>
     </section>
-    <div class="cart">
-        <div>
-            <img src="assets/img/footer/Cart_1.png">
+    <!---------------main--------------->
+    <div class="block-content">
+        <div class="image">
+            <img src="assets/img/footer/TGDD-540x270.png">
         </div>
-        <p>Không có sản phẩm nào trong giỏ hàng</p>
-        <div class="back">
-            <a href="HomePage.html">VỀ TRANG CHỦ</a>
+        <div class="phone">
+            <p>Tra cứu thông tin đơn hàng</p>
+            <div class="fill-phone">
+                <i class='bx bx-mobile'></i>
+                <input type="text" placeholder="Nhập số điện thoại mua hàng">
+            </div>
+            <button>TIẾP TỤC</button>
         </div>
-        <p>
-            Khi cần trợ giúp vui lòng gọi <span>1900 232 460</span> hoặc <span>028.3622.1060</span> (8h00 - 21h30)
-        </p>
     </div>
+    <!---------------footer--------------->
+    <div class="footer">
+        <div class="contact-other">
+            <div class="container">
+                <div class="phone">
+                    <li class="title">Tổng đài hỗ trợ</li>
+                    <li>
+                        <p>Gọi mua: <span>1900 232 460</span> (8:00 - 21-30)</p>
+                    </li>
+                    <li>
+                        <p>Khiếu nại: <span>1800.1062</span> (8:00 - 21-30)</p>
+                    </li>
+                    <li>
+                        <p>Bảo hành: <span>1900 232 464</span> (8:00 - 21-30)</p>
+                    </li>
+                </div>
+                <div class="company">
+                    <li class="title">Về công ty</li>
+                    <li>
+                        <p>Giới thiệu công ty (MWG.vn)</p>
+                    </li>
+                    <li>
+                        <p>Tuyển dụng</p>
+                    </li>
+                    <li>
+                        <p>Gửi góp ý, khiếu nại</p>
+                    </li>
+                    <li>
+                        <p>Tìm siêu thị (2.966 shop)</p>
+                    </li>
+                </div>
+                <div class="info-other">
+                    <li class="title">Thông tin khác</li>
+                    <li>
+                        <p>Tích điểm Quà tặng VIP</p>
+                    </li>
+                    <li>
+                        <p>Lịch sử mua hàng</p>
+                    </li>
+                    <li>
+                        <p>DV vệ sinh máy lạnh</p>
+                    </li>
+                    <li>
+                        <p>Tìm hiểu về mua trả góp</p>
+                    </li>
+                    <li>
+                        <p>Chính sách bảo hành</p>
+                    </li>
+                    <button class="view-more-btn">
+                        <p>Xem thêm</p><i class="ti-angle-down"></i>
+                    </button>
+                </div>
+                <div class="link">
+                    <p>Website cùng tập đoàn</p>
+                    <div class="logo">
+                        <img src="assets/img/footer/topzone.png">
+                        <img src="assets/img/footer/dienmayxanh.png">
+                        <img src="assets/img/footer/bachhoaxanh.png">
+                        <img src="assets/img/footer/nhathuoc.png">
+                        <img src="assets/img/footer/avakids.png">
+                        <img src="assets/img/footer/vieclam.png">
+                        <img src="assets/img/footer/erablue.png">
+                    </div>
+                    <div class="social">
+                        <a href=""><img src="assets/img/footer/icon_facebook.png">3886.8k Fan</a>
+                        <a href=""><img src="assets/img/footer/icon_youtube.png">869k Đăng ký</a>
+                        <a href=""><img src="assets/img/footer/icon_zalo.png">Zalo TGDĐ</a>
+                    </div>
+                    <div class="certify">
+                        <img src="assets/img/footer/logoSaleNoti.png">
+                        <img src="assets/img/footer/khieunai.png">
+                        <img src="assets/img/footer/dmca_protected_sml_120n.png">
+                        <img src="assets/img/footer/handle_cert.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
+                    02/01/2007.
+                    GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+                    Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô
+                    T2-1.2, Đường D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+                    cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Email:
+                    hotrotmdt@thegioididong.com.
+                    <span>Xem chính sách sử dụng</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -52,6 +52,7 @@ header li {
 
 header ul li,
 a {
+    color: #333333;
     font-size: 14px;
 }
 
@@ -219,6 +220,7 @@ header ul li:nth-child(5):hover {
 
 .address-form-content h2 {
     font-size: 18px;
+    color: #333333;
     padding: 12px 0;
     position: relative;
 }
