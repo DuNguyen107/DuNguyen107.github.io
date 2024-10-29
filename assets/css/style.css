@@ -288,6 +288,10 @@ header ul li:nth-child(5):hover {
     font-weight: bold;
 }
 
+.choose-menu a:last-child {
+    color: #c7c5c5;
+}
+
 .choose-menu-content {
     height: 220px;
     display: grid;
@@ -466,7 +470,7 @@ header ul li:nth-child(5):hover {
     overflow: hidden;
 }
 
-.products .products-tabs li:nth-child(1) {
+.products .products-tabs li.active {
     border-color: #F79009 !important;
     background-color: #FFF6E3 !important;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thegioididong.com - Điện thoại, Laptop, Phụ kiện, Đồng hồ chính hãng</title>
+    <title>Lịch sử mua hàng | Thegioididong.com</title>
     <link rel="icon" href="assets/img/logo/logo-title.png" type="image/jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
@@ -15,7 +15,6 @@
     <style>
         html {
             height: auto;
-            overflow-y: auto;
         }
 
         .block-content {
@@ -23,7 +22,6 @@
             text-align: center;
             align-items: center;
             justify-content: space-evenly;
-            font-family: ROBOTO LIGHT;
             width: 100%;
             margin: 65px 0 140px 0;
         }
@@ -42,13 +40,22 @@
 
         .block-content .phone p {
             font-size: 24px;
+            color: #5f5e5e;
             font-weight: normal;
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 25px;
         }
 
+        .phone .check-phone p {
+            display: block;
+            color: red;
+            font-size: 14px;
+            /* display: none; */
+        }
+
         .fill-phone {
             position: relative;
+            margin-bottom: 20px;
         }
 
         .fill-phone i {
@@ -82,7 +89,6 @@
             color: #fff;
             font-size: 17px;
             max-width: 100%;
-            margin-top: 25px;
             cursor: pointer;
         }
     </style>
@@ -353,9 +359,12 @@
             <p>Tra cứu thông tin đơn hàng</p>
             <div class="fill-phone">
                 <i class='bx bx-mobile'></i>
-                <input type="text" placeholder="Nhập số điện thoại mua hàng">
+                <input type="text" placeholder="Nhập số điện thoại mua hàng" id="phone-input">
             </div>
-            <button>TIẾP TỤC</button>
+            <div class="check-phone" id="phone-error" style="display: none;">
+                <p>Số điện thoại trống/không đúng định dạng</p>
+            </div>
+            <button id="submit-button">TIẾP TỤC</button>
         </div>
     </div>
     <!---------------footer--------------->
@@ -449,7 +458,34 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        const phoneInputElement = document.getElementById('phone-input');
+        const submitButton = document.getElementById('submit-button');
+        const phoneError = document.getElementById('phone-error');
+
+        // chi duoc nhap so
+        phoneInputElement.addEventListener('input', function () {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+
+        submitButton.addEventListener('click', function () {
+            validatePhone();
+        });
+
+        function validatePhone() {
+            const phoneInput = phoneInputElement.value;
+
+            const phonePattern = /^(0[3|5|7|8|9])[0-9]{8}$/;
+
+            if (phoneInput === "" || !phonePattern.test(phoneInput)) {
+                phoneError.style.display = "block";
+            } else {
+                phoneError.style.display = "none";
+                alert("Thành công !!");
+            }
+        }
+    </script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>

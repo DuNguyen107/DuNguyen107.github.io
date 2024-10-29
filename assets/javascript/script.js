@@ -114,3 +114,39 @@ viewMoreBtn.addEventListener('click', () => {
     isExpanded = !isExpanded;
     viewMoreBtn.innerHTML = isExpanded ? 'Thu gọn<i class="ti-angle-up"></i>' : 'Xem thêm<i class="ti-angle-down"></i>';
 });
+
+// nav menu
+document.querySelectorAll('.products-tabs li').forEach(item => {
+    item.addEventListener('click', function (event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
+        // Xóa lớp active khỏi tất cả các thẻ
+        document.querySelectorAll('.products-tabs li').forEach(li => {
+            li.classList.remove('active');
+        });
+        // Thêm lớp active vào thẻ được nhấp
+        this.classList.add('active');
+    });
+});
+// countdown
+let countdownDuration = 7200; // 7200 giây tương đương 2 tiếng
+
+// Cập nhật countdown mỗi giây
+const x = setInterval(function () {
+    // Tính toán giờ, phút, giây từ countdownDuration
+    const hours = Math.floor((countdownDuration % (3600 * 24)) / 3600);
+    const minutes = Math.floor((countdownDuration % 3600) / 60);
+    const seconds = countdownDuration % 60;
+
+    // Hiển thị kết quả trong các label
+    document.getElementById("hour").innerHTML = String(hours).padStart(2, '0');
+    document.getElementById("minute").innerHTML = String(minutes).padStart(2, '0');
+    document.getElementById("second").innerHTML = String(seconds).padStart(2, '0');
+
+    // Giảm countdownDuration mỗi giây
+    countdownDuration--;
+
+    // Nếu countdownDuration bằng 0, đặt lại về 2 tiếng
+    if (countdownDuration < 0) {
+        countdownDuration = 7200; // Reset về 7200 giây (2 tiếng)
+    }
+}, 1000);
