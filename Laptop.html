@@ -495,6 +495,40 @@
                 <div class="btn-right btn"><i class='bx bx-chevron-right'></i></div>
             </div>
         </div>
+        <script>
+            const slideContent = document.querySelector('.slider-content');
+            const imgs = document.querySelectorAll('.slider-content img');
+            const btnLeft = document.querySelector('.btn-left')
+            const btnRight = document.querySelector('.btn-right')
+            let current = 0
+            const length = imgs.length - 1;
+            const handleChangeSlide = () => {
+                if (current == length - 1) {
+                    current = 0
+                    let width = imgs[0].offsetWidth
+                    slideContent.style.transform = `translateX(0px)`
+                } else {
+                    current++
+                    let width = imgs[0].offsetWidth
+                    slideContent.style.transform = `translateX(${width * -1 * current}px)`
+                }
+            }
+
+            btnRight.addEventListener('click', () => {
+                handleChangeSlide()
+            })
+            btnLeft.addEventListener('click', () => {
+                if (current == 0) {
+                    current = length - 1
+                    let width = imgs[0].offsetWidth
+                    slideContent.style.transform = `translateX(${width * -1 * current}px)`
+                } else {
+                    current--
+                    let width = imgs[0].offsetWidth
+                    slideContent.style.transform = `translateX(${width * -1 * current}px)`
+                }
+            })
+        </script>
         <!---------------sản phẩm--------------->
         <div class="block-product">
             <div class="filter-product">

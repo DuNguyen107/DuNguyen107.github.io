@@ -150,3 +150,4 @@ const x = setInterval(function () {
         countdownDuration = 7200; // Reset về 7200 giây (2 tiếng)
     }
 }, 1000);
+
