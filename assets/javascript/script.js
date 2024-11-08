@@ -128,7 +128,7 @@ document.querySelectorAll('.products-tabs li').forEach(item => {
     });
 });
 // countdown
-let countdownDuration = 7200; // 7200 giây tương đương 2 tiếng
+let countdownDuration = 5000;
 
 // Cập nhật countdown mỗi giây
 const x = setInterval(function () {

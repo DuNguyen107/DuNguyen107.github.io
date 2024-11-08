@@ -423,7 +423,7 @@ header ul li:nth-child(5):hover {
 
 .big-banner a img {
     width: 100%;
-    height: 280px;
+    height: 240px;
     position: relative;
     border-radius: 8px;
     object-fit: cover;
